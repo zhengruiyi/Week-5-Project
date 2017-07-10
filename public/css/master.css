@@ -1,0 +1,51 @@
+*{
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.guess-number-container{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.generated-word-container{
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 5%;
+}
+
+.letters-guessed-container{
+  margin-top: 3%;
+}
+
+.index-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.diff-container{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.diff-container a{
+  text-decoration: none;
+}
+
+.play-again{
+  margin-top: 5%;
+}
+
+.play-again a{
+  text-decoration: none;
+}

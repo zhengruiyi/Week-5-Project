@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman: {{difficulty}}</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-container">
+        <h2>Hangman</h2>
+        <h2 id="difficulty">{{difficulty}} Mode</h2>
+      </div>
+      <div class="guess-number-container">
+        <h2>You have {{guessesRemaining}} tries left.</h2>
+      </div>
+    </div>
+    <div class="main-area-container">
+      <div class="generated-word-container">
+        <h2>{{#hiddenWord}}{{.}} {{/hiddenWord}}</h2>
+        <h2>{{#error}}{{error}}{{/error}}</h2>
+      </div>
+      <form class="user-guess-form" action="/main-scene" method="post">
+        <input type="hidden" name="difficulty" value="{{difficulty}}">
+        <input type="text" name="userGuessField" value="" autofocus>
+        <button type="submit" name="submitButton">Submit</button>
+      </form>
+      <div class="letters-guessed-container">
+        <h3>Letters tried: {{#lettersGuessed}}{{.}} {{/lettersGuessed}}</h3>
+      </div>
+    </div>
+  </body>
+</html>

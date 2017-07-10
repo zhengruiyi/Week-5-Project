@@ -1,0 +1,30 @@
+{
+  "name": "weekfiveproject",
+  "version": "1.0.0",
+  "main": "hangman.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "busboy": "^0.2.14",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "express-validation": "^1.0.2",
+    "express-validator": "^3.2.0",
+    "mustache-express": "^1.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "nodemon -e js,mustache ./hangman.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xiupan/WeekFiveProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xiupan/WeekFiveProject/issues"
+  },
+  "homepage": "https://github.com/Xiupan/WeekFiveProject#readme",
+  "description": ""
+}
